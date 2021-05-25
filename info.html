@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rete Zero</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <script>
+        /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media only screen and (max-width: 600px) {
+            .main {
+                width: 70%;
+                overflow: hidden;
+                margin: auto;
+                margin: 20% 0% 20%;
+                background: #23463f;
+                border-radius: 15px;
+                padding-top: 1%;
+                padding-bottom: 2%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <a href="index.html"><img src="logo.png"></a>
+        </div>
+        <div class="right">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Account</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="accedi.html">Accedi</a>
+                    <a href="registrati.html">Registrati</a>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            |
+            <a href="index.html">Home</a>
+            |
+            <a href="live.html">Live</a>
+            |
+            <a href="Dirette.html">Cerca dirette passate</a>
+            |
+            <a href="watchlist.html">Watchlist</a>
+            |
+            <a href="info.html">Info</a>
+            |
+        </div>
+    </div>
+    <div class="center">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.9778252929145!2d12.409819715947707!3d42.30033857919112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f3da39a3f6cbb%3A0x5adcc145e45c5c8c!2sIIS%20Ulderico%20Midossi%20-%20ITIS!5e0!3m2!1sit!2sit!4v1621002000978!5m2!1sit!2sit"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>Ecco i nostri contatti e social:</p>
+        <a href="http://www.midossi.gov.it">Sito Ufficiale</a>
+        <a href="http://www.midossi.gov.it/chi-siamo/indirizzi-e-contatti.html">Contatti</a>
+        <a href="https://www.facebook.com/IISUMidossi/"><img scr="fb.ico">Facebook</a>
+        
+</body>
+
+</html>
